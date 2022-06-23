@@ -41,6 +41,7 @@ To make your own firebase database, follow these steps
 3. Create a **Realtime Database**.
 
 The **rules** in the realtime database should be as follows:
+
 ![Chat-app firebase database rules](https://susjejesus.github.io/images/Capture1.PNG)
 
 > **Note** - You might want to modify these rules a little bit to work for you since, **these rules are not very secure**.
