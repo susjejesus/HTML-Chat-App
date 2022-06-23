@@ -32,7 +32,7 @@ To download this app:
 
 > You don't have to run **index.html** on a live server since, it's set up so you can run it as a **file** in your browser.
 
-## Setting up and linking Firebase database
+## Setting up and linking your Firebase database
 
 To make your own firebase database, follow these steps
 
