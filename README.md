@@ -20,7 +20,7 @@ You can view the sign up screen below:
 
 ## Data
 
-This app only collects your username, user id (specific to your computer, it will change if you change your google account or if your chat-app account is deleted in the database), and date & time of your account creating. It saves this data so, the next time you use this app, it will log you in automatically and give you the same username you signed-up with. This chat-app also stops a person from having the same username as another person's username in the database.
+This app only collects your username (specific to you) , user id (specific to your computer, it will change if you change your google account or if your chat-app account is deleted in the database), and date & time of your account creating. It saves this data so, the next time you use this app, it will log you in automatically and give you the same username you signed-up with. This chat-app also stops a person from having the same username as another person's username in the database.
  
 # Downloading
 
