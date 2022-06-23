@@ -41,22 +41,7 @@ To make your own firebase database, follow these steps
 3. Create a **Realtime Database**.
 
 The **rules** in the realtime database should be as follows:
-**{
-  "rules": {
-    ".read": "auth != null",
-    ".write": false,
-      "messages": {
-      ".write": "auth != null"
-    },
-    "users": {
-      ".write": "auth != null"
-    },
-    "names": {
-      ".write": "auth != null",
-      ".read": true
-    },
-  },
-}**
+![Chat-app firebase database rules](https://susjejesus.github.io/images/Capture1.PNG)
 
 > **Note** - You might want to modify these rules a little bit to work for you since, **these rules are not very secure**.
 
@@ -74,4 +59,6 @@ You can see an example in the picture below:
 
 Now your chat-app is ready to go.
 
-> You will  need to replace the existing firebase configuration with your firebase configuration for chat-app to work. This chat app will put you in a group chat with everyone who has used it so, everyone will be able to see your messages.
+> You will  need to replace the existing firebase configuration with your firebase configuration for chat-app to work. 
+ 
+> This chat app will put you in a group chat with everyone who has used it so, everyone will be able to see your messages.
