@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./images/other/favicon.png">
+</head>
+
+<body>
+
+    <div class="parent-container">
+        <div class="chat-container">
+
+            <div class="header">
+                <h1>Web Chat App</h1>
+            </div>
+
+            <div id="body">
+                <!-- The chat messages are inserted here -->
+            </div>
+
+            <div class="input">
+                <input type="text" name="message" id="message-felid" placeholder="Say something" maxlength="100">
+                <button id="send">
+                    <img src="./images/buttons/send.png" alt="Paper Airplane send button" width="50px" height="50px">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="title-container">
+        <div class="title">
+            <h1>Web Chat App</h1>
+            <p>
+                created by susjejesus
+                <br>
+                Github: susjejesus
+            </p>
+            <img src="./images/other/favicon.png" alt="guest" width="150px" height="150px">
+        </div>
+    </div>
+
+    <article class="login-container">
+        <div class="login">
+            <input type="text" id="name" name="text" placeholder="Name" maxlength="15"><br>
+            <button id="sign-up">Sign up</button>
+            <div class="error">
+                <h1 id="error-message"></h1>
+            </div>
+        </div>
+    </article>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js"></script>
+
+    <script>
+        // Put your firebase server configuration below
+        const firebaseConfig = {
+            apiKey: "",
+            authDomain: "",
+            projectId: "",
+            storageBucket: "",
+            messagingSenderId: "",
+            appId: ""
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="./src/name.js"></script>
+    <script src="./src/createSubstring.js"></script>
+    <script src="./src/variables.js"></script>
+    <script src="./src/messages.js"></script>
+    <script src="./src/main.js"></script>
+    <script src="./src/login-signup.js"></script>
+</body>
+
+</html>

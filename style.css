@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: #444343;
+}
+
+.parent-container {
+    display: none;
+    padding-top: 1%;
+    height: 98%;
+    width: 100%;
+    background-color: #444343;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-container {
+    border: 1px solid;
+    border-radius: 20px;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: dodgerblue;
+}
+
+.header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Fascinate', cursive;
+}
+
+#body {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 85%;
+    overflow-y: auto;
+}
+
+.user-message {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    padding-bottom: 5px;
+}
+
+#message-holder {
+    background-color: white;
+    border-radius: 10px;
+    width: fit-content;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 900;
+    font-size: 100%;
+}
+
+.received-message {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    padding-bottom: 5px;
+}
+
+#received-message-holder {
+    background-color: greenyellow;
+    border-radius: 10px;
+    width: fit-content;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 900;
+    font-size: 100%;
+}
+
+.sender-time {
+    font-size: x-small;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 900;
+    display: flex;
+    justify-content: right;
+    padding-top: 15%;
+}
+
+.user-time {
+    font-size: x-small;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 900;
+    display: flex;
+    justify-content: left;
+    padding-top: 15%;
+}
+
+#sender {
+    font-size: 20px;
+}
+
+.input{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.input input[type="text"]{
+    position: relative;
+    width: 85%;
+    height: 60%;
+    bottom: 30%;
+    left: 1%;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.input button{
+    position: relative;
+    left: 1%;
+    border-radius: 20px;
+    background-color: cornflowerblue;
+    width: 12.5%;
+    height: 90%;
+}
+
+.input button:hover{
+    position: relative;
+    left: 1%;
+    border-radius: 20px;
+    background-color: rgb(79, 118, 192);
+    width: 12.5%;
+    height: 90%;
+}
+
+.input img{
+    width: 100%;
+    height: 100%;
+}
+
+.title-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+}
+
+.title h1{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Fascinate', cursive;
+    font-size: 60px;
+}
+
+.title p{
+    padding-bottom: 5px;
+    color: white;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+}
+
+.title img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+}
+
+.login-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 5%;
+}
+
+#sign-up{
+    top: 2%;
+    bottom: 2%;
+    left: 2%;
+    right: 2%;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 900;
+}
+
+#name{
+    width: 200px;
+    height: 30px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 900;
+    font-size: large;
+}
+
+.error{
+    display: flex;
+    justify-content: center;
+}
+
+#error-message{
+    position: absolute;
+    color: red;
+    font-family: 'Cherry Cream Soda', cursive;
+    font-size: 30px;
+}
