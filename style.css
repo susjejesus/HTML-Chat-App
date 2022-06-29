@@ -108,7 +108,7 @@ body {
     font-weight: 900;
     display: flex;
     justify-content: right;
-    padding-top: 15%;
+    padding-top: 10%;
 }
 
 .user-time {
@@ -118,7 +118,7 @@ body {
     font-weight: 900;
     display: flex;
     justify-content: left;
-    padding-top: 15%;
+    padding-top: 10%;
 }
 
 #sender {
