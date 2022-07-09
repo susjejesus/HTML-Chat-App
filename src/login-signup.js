@@ -37,7 +37,7 @@ firebase.auth().onAuthStateChanged((user) => {
         document.querySelector('.login-container').remove();
 
         // Put the owners user id here
-        if (user.uid === '') {
+        if (user.uid === 'OWNERNAMEHERE') {
             owner = true;
             // The owners name here
             userName = "<h5 style='color:red'>[Owner] </h5>";
